@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> 
+       <!--viewport es una etiqueta utilizada para responsive designe, entraremos mas a detalle en CSS  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos de bootcamp</title>
+</head>
+<body>
+    <header>
+        <h1>fotos bootcamp</h1>
+    </header>
+    <main>
+        <div>
+            <!-- utilizar el atributo width no es recomendable,
+            eso deberia darlo el css -->
+            <img src="./assets/image/dragon001.jpg"
+            alt="imagen del dragon del fuego"    
+            width="400"
+            title="dragon"
+            >
+        </div>
+        <hr>
+        <picture>
+            <!-- media, se basa en el ancho del navegador -->
+            <source media="(min-width:800px)"
+            srcset="./assets/image/dragon002.jpg">
+            <img src="./assets/image/dragon003.jpg"
+            alt="dragon3">
+        </picture>
+    </main>
+</body>
+</html>
